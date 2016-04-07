@@ -6,6 +6,9 @@
 package git.test;
 
 /**
+ * 
+ * This seems to work well, but I need to master it because use GitHub it is
+ * really important today.
  *
  * @author denis
  */

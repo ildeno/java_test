@@ -7,6 +7,7 @@ package git.test;
 
 /**
  *
+ * Do I have to add something also here?
  * @author denis
  */
 public class GitTest {
