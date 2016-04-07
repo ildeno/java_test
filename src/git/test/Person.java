@@ -13,20 +13,11 @@ package git.test;
  * @author denis
  */
 public class Person {
-    //Just a little test
-    private static boolean checker(String val){
-        return val != null && !val.equals("");
-    }
-    private static boolean checker(int a){
-        return a > 0;
-    }
+    
     private final String name;
     private final String surname;
     private final int age;
-    public Person(String n, String s, int a) throws Exception{
-        if(!checker(n) || !checker(s) || !checker(a)){
-            throw new Exception("Can't create a new Person: check the constructor's params");
-        }
+    public Person(String n, String s, int a) {
         this.name = n;
         this.surname = s;
         this.age = a;
@@ -35,5 +26,13 @@ public class Person {
     @Override
     public String toString(){
         return this.name + " " + this.surname + " " + this.age + " years old";
+    }
+    
+    /**
+     * It returns true if its age is bigger or equal than 18
+     * @return boolean
+     */
+    public boolean isAdult(){
+        return this.age >= 18;
     }
 }
