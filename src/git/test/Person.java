@@ -36,13 +36,24 @@ public class Person {
     public boolean isAdult(){
         return this.age >= 18;
     }
-    
+    /**
+     * Returns the name
+     * @return String
+     */
     public String getName(){
         return this.name;
     }
+    /**
+     * Returns the surname
+     * @return String
+     */
     public String getSurname(){
         return this.surname;
     }
+    /**
+     * Returns the age
+     * @return int
+     */
     public int getAge(){
         return this.age;
     }
