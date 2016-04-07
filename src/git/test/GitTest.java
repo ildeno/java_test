@@ -8,6 +8,7 @@ package git.test;
 /**
  *
  * Do I have to add something also here?
+ *
  * @author denis
  */
 public class GitTest {
@@ -17,29 +18,20 @@ public class GitTest {
      */
     public static void main(String[] args) {
         Person p = null;
-        try{
-            p = new Person("Denis", "Gerolini", 34);
-        }catch(Exception e){
-            e.printStackTrace();
-            System.exit(1);
-        }
+
+        p = new Person("Denis", "Gerolini", 34);
         message(p.toString());
-        try{
-            p = new Person(null, null, -2);
-        }catch(Exception e){
-            e.printStackTrace();
-            System.exit(1);
-        }
+
+        p = new Person(null, null, -2);
         message(p.toString());
     }
 
-    
-    
     /**
      * Just a printed message
-     * @param value 
+     *
+     * @param value
      */
-    private static void message(String value){
+    private static void message(String value) {
         System.out.println(value);
     }
 }
