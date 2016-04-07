@@ -25,7 +25,8 @@ public class Person {
     
     @Override
     public String toString(){
-        return this.name + " " + this.surname + " " + this.age + " years old";
+        return this.name + " " + this.surname + " " + this.age + " years old: "
+                + (isAdult()? "adult" : "not adult");
     }
     
     /**
