@@ -15,7 +15,21 @@ public class GitTest {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Person p = null;
+        try{
+            p = new Person("Denis", "Gerolini", 34);
+        }catch(Exception e){
+            e.printStackTrace();
+            System.exit(1);
+        }
+        message(p.toString());
+        try{
+            p = new Person(null, null, -2);
+        }catch(Exception e){
+            e.printStackTrace();
+            System.exit(1);
+        }
+        message(p.toString());
     }
 
     

@@ -21,7 +21,7 @@ public class Person {
     private final int age;
     public Person(String n, String s, int a) throws Exception{
         if(!checker(n) || !checker(s) || !checker(a)){
-            throw new Exception("Impossible create a new Person: check the constructor's params");
+            throw new Exception("Can't create a new Person: check the constructor's params");
         }
         this.name = n;
         this.surname = s;
