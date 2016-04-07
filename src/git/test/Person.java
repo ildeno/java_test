@@ -10,6 +10,7 @@ package git.test;
  * @author denis
  */
 public class Person {
+    //Just a little test
     private static boolean checker(String val){
         return val != null && !val.equals("");
     }
